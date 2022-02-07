@@ -4,6 +4,16 @@
 	<script type="text/javascript" src="scripts/visitorapi.min.js"></script>	
 	<script type="text/javascript" src="scripts/dil.js"></script>
 	<script type="text/javascript">
+		var visitor = Visitor.getInstance("CDF91D616151A1A10A495C1B@AdobeOrg", { 
+		     trackingServer: "INSERT-TRACKING-SERVER-HERE", // same as s.trackingServer 
+		     trackingServerSecure: "INSERT-SECURE-TRACKING-SERVER-HERE", // same as s.trackingServerSecure 
+		 
+		     // To enable CNAME support, add the following configuration variables 
+		     // If you are not using CNAME, DO NOT include these variables 
+		     marketingCloudServer: "INSERT-TRACKING-SERVER-HERE", 
+		     marketingCloudServerSecure: "INSERT-SECURE-TRACKING-SERVER-HERE" // same as s.trackingServerSecure 
+		});
+		
 		var sample_dil = DIL.create({partner:"odl"}); 
 		sample_dil.api.signals({ 
 		   c_color:"blue", 
