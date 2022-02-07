@@ -4,6 +4,12 @@
 	<script type="text/javascript" src="scripts/visitorapi.min.js"></script>	
 	<script type="text/javascript" src="scripts/dil.js"></script>
 	<script type="text/javascript">
+		var sample_dil = DIL.create({partner:"odl"}); 
+		sample_dil.api.signals({ 
+		   c_color:"blue", 
+		   c_price:"900" 
+		}); 
+		sample_dil.api.submit();
     </script>
 </head>
 <body>
